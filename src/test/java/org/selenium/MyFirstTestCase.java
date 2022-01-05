@@ -4,13 +4,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class MyFirstTestCase {
+public class MyFirstTestCase extends Base{
 
     @Test
     public void dummyTest(){
 
-        System.setProperty("webdriver.chrome.driver","/Users/alexisabner/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", PATH);
         WebDriver driver = new ChromeDriver();
-        driver.close();
+        driver.get("https://askomdch.com");
+        //driver.close();
     }
 }
