@@ -9,7 +9,7 @@ public class MyFirstTestCase {
     @Test
     public void dummyTest(){
 
-        System.setProperty("webdriver.chrome.driver","/Users/alexisabner/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", PATH);
         WebDriver driver = new ChromeDriver();
         driver.close();
     }
